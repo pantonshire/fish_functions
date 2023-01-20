@@ -1,6 +1,6 @@
 function fish_bin_path
     if test -n "$fish_pid"
-        echo (readlink "/proc/$fish_pid/exe") "($fish_pid)"
+        readlink "/proc/$fish_pid/exe"
     end
 end
 
